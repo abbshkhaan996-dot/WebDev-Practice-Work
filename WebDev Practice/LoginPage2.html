@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Login Page</title>
+</head>
+<body>
+   <h1>Welcome to WebDevelopment</h1>
+   <p>Please login to continue</p>
+<form onsubmit="return submitForm()">
+   <fieldset>
+     <lable for="username">Username:</lable>
+     <input type="text" placeholder="Enter your name"><br><br>
+     <lable for="email address">Email address:</lable>
+     <input type="text" placeholder="Enter email address"><br><br>
+     <lable for="password">Password:</lable>
+     <input type="password" placeholder="Enter password"><br><br>
+     <lable for="gender">Gender:</lable><br>
+     <input type="radio" name="gender"> Male
+     <input type="radio" name="gender"> Female<br><br>
+     <label for="hobies">Hobbies:</label><br>
+     <input type="checkbox"> Reading
+     <input type="checkbox"> Sports
+     <input type="checkbox"> Music<br><br>
+     <label for="country">Country:</label>
+     <select>
+     <option>Pakistan</option>
+     <option>India</option>
+     <option>China</option>
+     </select><br><br>
+     <label for="feedback">Feedback:</label><br>
+     <textarea rows="4" cols="30"></textarea><br><br>
+     <input type="submit" value="Submit">
+     <input type="reset" value="Reset">
+   </fieldset>
+</form>
+  <p><a href="#">Forgot password?</a></p>
+  <script>
+  function submitForm() {
+     alert("Form submitted successfully!");
+     return false;
+  }
+  </script>
+</body>
+</html>

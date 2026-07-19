@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Simple Page with Nav and Search</title>
+</head>
+<body>
+ <!-- Navigation bar -->
+ <nav>
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Services</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ </nav>
+ <!-- Search bar with a button -->
+ <form action="/search" method="get">
+ <label for="q">Search:</label>
+ <input type="search" id="q" name="q" placeholder="Type your query">
+ <button type="submit">Search</button>
+</form>
+ <!-- Optional small script to show the query (remove if not needed) -->
+ <script>
+ // This prevents navigation when testing locally and shows the search term in an alert.
+ document.querySelector('form').addEventListener('submit',function(e){
+e.preventDefault();
+ var query = document.getElementById('q').value;
+ alert('You searched for: ' + query);
+ });
+ </script>
+</body>
+</html>
