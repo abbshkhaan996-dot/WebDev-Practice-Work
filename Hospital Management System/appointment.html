@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Appointment Reservation</title> 
+</head> 
+<body style="background-color:#e3f2fd"> 
+<center><u><h1><i>Appointment Reservation</h1></i></u></center> <br><br>
+<center>
+<button style="background-color:green ; color: white; padding:10px; width:250px;" onclick="toggleSection('info')">Patient Information</button><br><br>
+<div id="info" style="display:none">
+   <form>
+    <label>Patient Name:</label><br>
+    <input type="text" placeholder="Enter name" style="width:30%; padding:6px;"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="text" placeholder="Enter gender" style="width:30%; padding:6px;"><br><br>
+
+    <label>Address:</label><br>
+    <input type="text" placeholder="Enter address" style="width:30%; padding:6px;"><br><br>
+
+    <label>Email ID:</label><br>
+    <input type="text" placeholder="e.g., Cardiology" style="width:30%; padding:6px;"><br><br>
+
+    <label>Contact No:</label><br>
+    <input type="text" placeholder="Enter email" style="width:30%; padding:6px"><br><br><br>
+
+    <button style="background-color:#4caf50; color:white; padding:7px; width:10%;">Next</button>
+  </form>
+</div><br><br><br>
+
+<button style="background-color:green ; color: white; padding:10px; width:250px;" onclick="toggleSection('app')">Appointment Details</button><br><br>
+<div id="app" style="display:none">
+  <form>
+    <label>Date of Appointment:</label><br>
+    <input type="text" placeholder="Enter date" style="width:30%; padding:6px;"><br><br>
+
+    <label>Preferred Time:</label><br>
+    <input type="text" placeholder="Enter time" style="width:30%; padding:6px;"><br><br>
+
+    <label>Department:</label><br>
+    <input type="text" placeholder="Enter department" style="width:30%; padding:6px;"><br><br>
+
+    <label>Email ID:</label><br>
+    <input type="text" placeholder="Enter email" style="width:30%; padding:6px;"><br><br>
+
+    <label>Choose Doctor:</label><br>
+    <input type="text" placeholder="e.g.cardiology,Orthopedics,ENT" style="width:30%; padding:6px"><br><br><br>
+
+    <label>Appointment Type:</label><br>
+    <input type="text" placeholder="New / Follow up" style="width:30%; padding:6px"><br><br><br>
+
+    <button style="background-color:#4caf50; color:white; padding:7px; width:10%;">Next</button>
+  </form>
+</div><br><br><br>
+
+<button style="background-color:green ; color: white; padding:10px; width:250px;" onclick="toggleSection('add')">Additional Information</button><br><br>
+<div id="add" style="display:none">
+  <form>
+    <label>Reason for Visit:</label><br>
+    <input type="text" placeholder="Enter reason" style="width:30%; padding:6px;"><br><br>
+
+    <label>Mode of Appointment:</label><br>
+    <input type="text" placeholder="In person/ Online" style="width:30%; padding:6px;"><br><br>
+
+    <button style="background-color:#4caf50; color:white; padding:7px; width:10%;">Next</button>
+  </form>
+</div><br><br>
+
+<button style="background-color:green ; color: white; padding:10px; width:250px;" onclick="toggleSection('confirm')">Confirmation Section</button><br><br>
+<div id="confirm" style="display:none">
+  <form>
+    <label>Payment Option:</label><br>
+    <input type="text" placeholder="Cash/Card" style="width:30%; padding:6px;"><br><br>
+
+    <button style="background-color:#4caf50; color:white; padding:7px; width:10%;">Confirm</button>
+  </form>
+</div><br><br>
+    
+ <button onclick="window.location.href='HOSPITAL MANAGEMENT SYSTEM.html'">Back to Home</button>
+
+<script>
+function toggleSection(id) {
+  var section = document.getElementById(id);
+  if (section.style.display === "none") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+</script>
+</center>
+</body>
+</html>
